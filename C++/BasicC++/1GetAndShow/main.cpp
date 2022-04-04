@@ -4,5 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "What is your name? ";
+    string Name;
+    cout << "What is your name? "<<endl;
+    cin >> Name;
+    cout << Name << endl;
 }
