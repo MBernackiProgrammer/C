@@ -1,4 +1,4 @@
-namespace AplikacjaKonsolowa
+namespace GetAndPrintData
 {
     class Program
     {
