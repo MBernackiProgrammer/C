@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95E78113-11CB-499E-B84E-DB48C33CDBB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Racing_Island_Lancher</RootNamespace>
+    <AssemblyName>Racing Island Lancher</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publikuj\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <MinimumRequiredVersion>1.0.1.0</MinimumRequiredVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6F41E9C0C92E8BF54DA1AB67D93B608282B58B28</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Racing Island Lancher_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6.1\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sites\Account\CreateAccount\CreateLauncherAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\Account\CreateAccount\CreateLauncherAccount.Designer.cs">
+      <DependentUpon>CreateLauncherAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\Account\LoginWithOutMGS\LoginWithoutMGSAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\Account\LoginWithOutMGS\LoginWithoutMGSAccount.Designer.cs">
+      <DependentUpon>LoginWithoutMGSAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\Account\Login\LoginTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\Account\Login\LoginTo.Designer.cs">
+      <DependentUpon>LoginTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\Error\Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\Error\Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\Error\ErrorInFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\Error\ErrorInFound.Designer.cs">
+      <DependentUpon>ErrorInFound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\GameInstaling\InstalingGame\InstalOrFindGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\GameInstaling\InstalingGame\InstalOrFindGame.Designer.cs">
+      <DependentUpon>InstalOrFindGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\GameSettings\GameSrttings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\GameSettings\GameSrttings.Designer.cs">
+      <DependentUpon>GameSrttings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sites\MainPage\LauncherMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sites\MainPage\LauncherMainPage.Designer.cs">
+      <DependentUpon>LauncherMainPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sites\Account\CreateAccount\CreateLauncherAccount.resx">
+      <DependentUpon>CreateLauncherAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\Account\LoginWithOutMGS\LoginWithoutMGSAccount.resx">
+      <DependentUpon>LoginWithoutMGSAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\Account\Login\LoginTo.resx">
+      <DependentUpon>LoginTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\Error\Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\Error\ErrorInFound.resx">
+      <DependentUpon>ErrorInFound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\GameInstaling\InstalingGame\InstalOrFindGame.resx">
+      <DependentUpon>InstalOrFindGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\GameSettings\GameSrttings.resx">
+      <DependentUpon>GameSrttings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sites\MainPage\LauncherMainPage.resx">
+      <DependentUpon>LauncherMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Racing Island Lancher_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sites\Games\RacingIsland\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataBase\DataBase.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DataBase\DataBase_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>DataBase.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 i x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

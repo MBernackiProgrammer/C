@@ -1,0 +1,84 @@
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Properties.Resources.resources
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.GenerateResource.cache
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.CoreCompileInputs.cache
+F:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.config
+F:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe
+F:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.pdb
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.pdb
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.Login.LoginTo.resources
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.MainPage.LauncherMainPage.resources
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csprojAssemblyReference.cache
+F:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.CreateAccount.CreateAccount.resources
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.config
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.pdb
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Properties.Resources.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.Login.LoginTo.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.MainPage.LauncherMainPage.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.GenerateResource.cache
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.CoreCompileInputs.cache
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.pdb
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.CreateAccount.CreateLauncherAccount.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.LoginWithOutMGS.LoginWithoutMGSAccount.resources
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase.mdf
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase_log.ldf
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.AssemblyReference.cache
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.Error.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.ErrorInFound.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameSettings.GameSrttings.resources
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase.mdf
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase_log.ldf
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.config
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.pdb
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.AssemblyReference.cache
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Properties.Resources.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.CreateAccount.CreateLauncherAccount.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.LoginWithOutMGS.LoginWithoutMGSAccount.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.Login.LoginTo.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.Error.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.ErrorInFound.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameSettings.GameSrttings.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.MainPage.LauncherMainPage.resources
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.GenerateResource.cache
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.CoreCompileInputs.cache
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.pdb
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.manifest
+E:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.application
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.TrustInfo.xml
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe.manifest
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.application
+E:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameInstaling.InstalingGame.InstalOrFindGame.resources
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.manifest
+Y:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.application
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameInstaling.InstalingGame.InstalOrFindGame.resources
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.TrustInfo.xml
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe.manifest
+Y:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.application
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase.mdf
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\DataBase\DataBase_log.ldf
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.config
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe.manifest
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.application
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.exe
+Z:\Racing Island Lancher\Racing Island Lancher\bin\Debug\Racing Island Lancher.pdb
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.AssemblyReference.cache
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Properties.Resources.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.CreateAccount.CreateLauncherAccount.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.LoginWithOutMGS.LoginWithoutMGSAccount.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Account.Login.LoginTo.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.Error.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.Error.ErrorInFound.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameInstaling.InstalingGame.InstalOrFindGame.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.GameSettings.GameSrttings.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing_Island_Lancher.Sites.MainPage.LauncherMainPage.resources
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.GenerateResource.cache
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.csproj.CoreCompileInputs.cache
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.TrustInfo.xml
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe.manifest
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.application
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.exe
+Z:\Racing Island Lancher\Racing Island Lancher\obj\Debug\Racing Island Lancher.pdb
