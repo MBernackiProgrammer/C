@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.TranslateObject.cpp.obj": [
+			"TranslateObject.cpp.obj",
+			"TranslateObjectBPLibrary.cpp.obj"
+		],
+		"Module.TranslateObject.gen.cpp.obj": [
+			"TranslateObject.init.gen.cpp.obj",
+			"TranslateObjectBPLibrary.gen.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-TranslateObject-0011.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"Z:\RacingIsland\Intermediate\Build\Win64\RacingIslandEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"Z:\RacingIsland\Plugins\TranslateObject\Intermediate\Build\Win64\UE4Editor\Development\TranslateObject\Module.TranslateObject.cpp.obj"
+"Z:\RacingIsland\Plugins\TranslateObject\Intermediate\Build\Win64\UE4Editor\Development\TranslateObject\Module.TranslateObject.gen.cpp.obj"
+"Z:\RacingIsland\Plugins\TranslateObject\Intermediate\Build\Win64\UE4Editor\Development\TranslateObject\Default.rc2.res"
+/OUT:"Z:\RacingIsland\Plugins\TranslateObject\Intermediate\Build\Win64\UE4Editor\Development\TranslateObject\UE4Editor-TranslateObject-0011.lib"
