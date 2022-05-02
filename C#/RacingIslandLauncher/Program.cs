@@ -15,17 +15,9 @@ namespace Racing_Island_Lancher
     
     static class Program
     {
-        /// <summary>
-        /// Główny punkt wejścia dla aplikacji.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-
-            // Program pobiera miesce folderu AppData oraz dodaje moduły(foldery)
-            // RacingIslandLauncher - folder podstawowy ustawień lauchera
-            // UserDatas - folder danych użytkowników 
-
             string Path1 = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             Path1 = Path1 + "\\RacingIslandLauncher\\UserDatas";
 
