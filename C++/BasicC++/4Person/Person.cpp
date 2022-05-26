@@ -531,6 +531,7 @@ void Person::InMenu()
         cout << "3. Wyswietl osoby" << endl;
         cout << "4. Wyszukaj po nazwisku" << endl;
 
+
         cin >> SelectedIndex;
 
         if (SelectedIndex == "1" || SelectedIndex == "2" || SelectedIndex == "3" || SelectedIndex == "4")
