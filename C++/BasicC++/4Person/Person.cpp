@@ -1,41 +1,43 @@
-// ZapisujęTowary.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//JD
-
 #include <iostream>
 #include <fstream>
 #include <string>
 using namespace std;
 
-class Program
+class Person
 {
 public:
-    //Menu
+
+    //Person managment
+    void DodajOsobe();
+    void UsunOsobe();
+    bool WyswietlOsoby(bool ToMenu);
+    void StaraSesja();
+    void OldSave();
+    void SearchForPerson();
+    
+    //search person
+    string GetUserName();
+
+    //Menu func
     void StartMenu();
     void InMenu();
 
-    //Product managment
-    void DodajProdukt();
-    void UsunProdukt();
-    bool WyswietlProdukty(bool ToMenu);
-    void StaraSesja();
-    void StertaStarychSavow();
-
-    string GetUserName();
     
+
     bool NewSession = true;
     string FileName;
     string UserName;
 };
 
-Program* Towary = new Program;
+Person* Ludzie = new Person;
 
 int main()
 {
     setlocale(LC_CTYPE, "Polish");
-    Towary->StartMenu();
+    Ludzie->StartMenu();
 }
 
-void Program::StartMenu()
+void Person::StartMenu()
 {
     string Selected;
     for (;;)
@@ -59,17 +61,17 @@ void Program::StartMenu()
     {
         //Wczytaj poprzednią sesję 
         system("cls");
-        Towary->StaraSesja();
+        Ludzie->StaraSesja();
     }
     else if (Selected == "2")
     {
-        Towary->NewSession = true;
+        Ludzie->NewSession = true;
         system("cls");
         cout << "Podaj nazwę użytkownika :" << endl;
-        cin >> Towary->UserName;
+        cin >> Ludzie->UserName;
 
         cout << "Podaj nazwę zapisu :" << endl;
-        cin >> Towary->FileName;
+        cin >> Ludzie->FileName;
 
         string SaveFile = "Helper";
         ifstream fin(SaveFile.c_str());
@@ -85,24 +87,24 @@ void Program::StartMenu()
 
         ofstream fout(SaveFile.c_str());
 
-        fout << Towary->FileName << endl;
+        fout << Ludzie->FileName << endl;
         fout.close();
 
-        string File = Towary->FileName;
+        string File = Ludzie->FileName;
         ofstream fout2(File.c_str());
         fout2 << "[USER]" << endl;
-        fout2 << Towary->UserName << endl;
+        fout2 << Ludzie->UserName << endl;
         fout2 << "" << endl;
         fout2.close();
 
         system("cls");
-        Towary->InMenu();
+        Ludzie->InMenu();
     }
 }
 
-void Program::DodajProdukt()
+void Person::DodajOsobe()
 {
-    string File = Towary->FileName;
+    string File = Ludzie->FileName;
 
     ifstream fin(File.c_str());
 
@@ -114,45 +116,42 @@ void Program::DodajProdukt()
         AllProdukts = AllProdukts + ch;
     }
     fin.close();
-    
-    
+
+
     ofstream fout(File.c_str());
 
     fout << AllProdukts;
-    
 
-    string ProductName = "";
-    int index = 0;
-    int ProductQuanlity = 0;
-    int ProductPrice = 0;
-    bool ProductActive = true;
 
-    cout << "Product's name :" << endl;
-    cin >> ProductName;
+    string Name = "";
+    int PersonIndex = 0;
+    string Surename = "";
+    int Age = 0;
+    bool PersonActive = true;
 
-    cout << "Product quanlity :" << endl;
-    cin >> ProductQuanlity;
+    cout << "Name :" << endl;
+    cin >> Name;
 
-    cout << "Product price" << endl;
-    float price = 0.0;
-    cin >> price;
+    cout << "Surename :" << endl;
+    cin >> Surename;
 
-    ProductQuanlity = price * 100;
+    cout << "Age" << endl;
+    cin >> Age;
 
     fout << "[PA]" << endl;
-    fout << ProductActive << endl;
+    fout << PersonActive << endl;
 
     fout << "[PI]" << endl;
-    fout << index << endl;
+    fout << PersonIndex << endl;
 
     fout << "[PN]" << endl;
-    fout << ProductName << endl;
+    fout << Name << endl;
 
     fout << "[PQ]" << endl;
-    fout << ProductQuanlity << endl;
+    fout << Surename << endl;
 
     fout << "[PP]" << endl;
-    fout << ProductPrice << endl;
+    fout << Age << endl;
 
     fout << "" << endl;
 
@@ -160,12 +159,12 @@ void Program::DodajProdukt()
 
     system("cls");
 
-    Towary->InMenu();   
+    Ludzie->InMenu();
 }
 
-void Program::UsunProdukt()
+void Person::UsunOsobe()
 {
-    if (Towary->WyswietlProdukty(false))
+    if (Ludzie->WyswietlOsoby(false))
     {
         cout << "Wpisz element do usunięcia" << endl;
         int indexToDelete = 0;
@@ -173,7 +172,7 @@ void Program::UsunProdukt()
 
         string last = "";
         string line = "";
-        ifstream File(Towary->FileName);
+        ifstream File(Ludzie->FileName);
         int index = 0;
         int HowManyLines = 0;
         int lineNumber = 0;
@@ -195,7 +194,7 @@ void Program::UsunProdukt()
         string* Tab;
         Tab = new string[HowManyLines];
 
-        ifstream FileV2(Towary->FileName);
+        ifstream FileV2(Ludzie->FileName);
 
         for (int i = 0; i < HowManyLines; i++)
         {
@@ -214,7 +213,7 @@ void Program::UsunProdukt()
 
         FileV2.close();
 
-        string filetosave = Towary->FileName;
+        string filetosave = Ludzie->FileName;
         ofstream fout(filetosave.c_str());
 
         for (int i = 0; i < HowManyLines; i++)
@@ -224,17 +223,17 @@ void Program::UsunProdukt()
 
         system("cls");
 
-        cout << "Pomyślnie usunięto produkt" << endl;
+        cout << "Pomyślnie usunięto osobę" << endl;
 
     }
-    Towary->InMenu();
+    Ludzie->InMenu();
 }
 
-bool Program::WyswietlProdukty(bool ToMenu)
+bool Person::WyswietlOsoby(bool ToMenu)
 {
     string last = "";
     string line = "";
-    ifstream File(Towary->FileName);
+    ifstream File(Ludzie->FileName);
 
     bool PrintInfo = true;
     bool Foundedany = false;
@@ -242,7 +241,7 @@ bool Program::WyswietlProdukty(bool ToMenu)
     for (;;)
     {
         getline(File, line);
-        
+
         if (line == "[PA]")
         {
             getline(File, line);
@@ -262,7 +261,7 @@ bool Program::WyswietlProdukty(bool ToMenu)
             if (PrintInfo)
             {
                 getline(File, line);
-                cout << "Product nr " << index + 1 << " name : " << line << endl;
+                cout << "Osoba nr " << index + 1 << " name : " << line << endl;
             }
         }
         else if (line == "[PQ]")
@@ -270,7 +269,7 @@ bool Program::WyswietlProdukty(bool ToMenu)
             if (PrintInfo)
             {
                 getline(File, line);
-                cout << "Product nr " << index + 1 << " quantity : " << line << endl;
+                cout << "Osoba nr " << index + 1 << " surename : " << line << endl;
             }
         }
         else if (line == "[PP]")
@@ -278,7 +277,7 @@ bool Program::WyswietlProdukty(bool ToMenu)
             if (PrintInfo)
             {
                 getline(File, line);
-                cout << "Product nr " << index + 1<< " price : " << stold(line) / 100 << endl;
+                cout << "Osoba nr " << index + 1 << " age : " << stold(line) << endl;
 
                 index = index + 1;
             }
@@ -292,22 +291,22 @@ bool Program::WyswietlProdukty(bool ToMenu)
     }
     if (Foundedany == false)
     {
-        cout << "Niestety nie znaleźliśmy żadnego produktu" << endl;
+        cout << "Niestety nie znaleźliśmy żadnej osoby" << endl;
     }
     if (ToMenu)
     {
-        Towary->InMenu();
+        Ludzie->InMenu();
     }
-    
+
     return Foundedany;
 }
 
-void Program::StaraSesja()
+void Person::StaraSesja()
 {
     string lFileName;
     cout << "Wpisz nazwę zapisu pliku :" << endl;
     cin >> lFileName;
-    
+
     ifstream fin(lFileName.c_str());
 
     if (fin.fail())
@@ -317,7 +316,7 @@ void Program::StaraSesja()
 
         for (;;)
         {
-            cout << "Wpisałeś / aś nie poprawną nazwę pliku, wybierz opcję :" << endl;
+            cout << "Wpisałeś/aś nie poprawną nazwę pliku, wybierz opcję :" << endl;
             cout << "1. Wybierz spośród splików." << endl;
             cout << "2. Spróbuj ponownie spisać nazwę pliku." << endl;
             cout << "3. Powrót do menu startowego" << endl;
@@ -338,43 +337,43 @@ void Program::StaraSesja()
             //Wypisywanie plików z pliku
             system("cls");
             fin.close();
-            Towary->StertaStarychSavow();
+            Ludzie->OldSave();
         }
         else if (SelectedOption == "2")
         {
             //Wpisz ponownie nazwę pliku 
             system("cls");
             fin.close();
-            Towary->StaraSesja();
+            Ludzie->StaraSesja();
         }
         else if (SelectedOption == "3")
         {
             //Powrót ponownie do menu
             system("cls");
             fin.close();
-            Towary->StartMenu();
+            Ludzie->StartMenu();
         }
     }
     else
     {
         //Udało się otworzyć plik 
-        Towary->FileName = lFileName;
-        Towary->NewSession = false;
+        Ludzie->FileName = lFileName;
+        Ludzie->NewSession = false;
 
 
         fin.close();
         system("cls");
-        Towary->InMenu();
+        Ludzie->InMenu();
     }
 }
 
-void Program::StertaStarychSavow()
+void Person::OldSave()
 {
     for (;;)
     {
         cout << "Wybierz nazwę sava :" << endl;
         int Selected = 0;
-        int IleSavow = 0; 
+        int IleSavow = 0;
         string last = "";
         string line = "";
         ifstream File("Helper");
@@ -391,12 +390,12 @@ void Program::StertaStarychSavow()
             IleSavow = IleSavow + 1;
         }
 
-        string*Tab;
+        string* Tab;
         Tab = new string[IleSavow];
 
         IleSavow = IleSavow - 1;
         File.close();
-        
+
         ifstream FileV2("Helper");
         for (int i = 0; i < IleSavow; i++)
         {
@@ -408,25 +407,93 @@ void Program::StertaStarychSavow()
         cin >> Selected;
         if (Selected < IleSavow + 1 && Selected > 0)
         {
-            Towary->FileName = Tab[Selected - 1];
-            Towary->InMenu();
+            Ludzie->FileName = Tab[Selected - 1];
+            Ludzie->InMenu();
             break;
         }
         else
         {
-            cout << "Spróbuj ponownie, wybierz zakres niędzy 1, a " <<IleSavow << endl;
+            cout << "Spróbuj ponownie, wybierz zakres między 1, a " << IleSavow << endl;
         }
     }
 
 }
 
-string Program::GetUserName()
+void Person::SearchForPerson()
+{
+    string SurrnameSearch;
+
+    cout << "Podaj nazwisko :" << endl;
+    cin >> SurrnameSearch;
+    ifstream File(Ludzie->FileName);
+    int index = 0;
+    int HowManyLines = 0;
+    int lineNumber = 0;
+    string last = "";
+    string line = "";
+
+    string lastPN = "";
+    string Age = "";
+    string lastSurname = "";
+
+    for (;;)
+    {
+        getline(File, line);
+
+        if (SurrnameSearch == last)
+        {
+            getline(File, line);
+
+            cout << index << ". " << lastPN << " " << lastSurname << " wiek = " << line << endl;
+            Ludzie->InMenu();
+            break;
+        }
+
+        if (last == "" && line == "")
+        {
+            cout << "Niestety nie znalezmy uzytkownika" << endl;
+            Ludzie->InMenu();
+            break;
+        }
+
+        if (line == "[PN]")
+        {
+            index = index + 1;
+            getline(File, line);
+            lastPN = line;  
+
+        }
+
+        if (line == "[PP]")
+        {
+            getline(File, line);
+            Age = line;
+
+        }
+
+        if (line == "[PQ]")
+        {
+            getline(File, line);
+            lastSurname = line;
+
+        }
+
+        
+        last = line;
+        HowManyLines = HowManyLines + 1;
+
+    }
+
+    File.close();
+}
+
+string Person::GetUserName()
 {
     string UserName = "";
 
     string last = "";
     string line = "";
-    ifstream File(Towary->FileName);
+    ifstream File(Ludzie->FileName);
     for (;;)
     {
         getline(File, line);
@@ -438,33 +505,36 @@ string Program::GetUserName()
             break;
         }
     }
-    Towary->UserName = UserName;
+    Ludzie->UserName = UserName;
     return UserName;
 }
 
-void Program::InMenu()
+void Person::InMenu()
 {
-    Towary->GetUserName();
+    Ludzie->GetUserName();
     string SelectedIndex;
-    if (Towary->NewSession)
+    if (Ludzie->NewSession)
     {
-        cout << "Witaj, " << Towary->UserName << ", oto program magazynierski, w czym mogę pomóc ? " << endl;
+        cout << "Witaj, " << Ludzie->UserName << ", oto program do zarządzania danymi osób, w czym mogę pomóc ? " << endl;
     }
     else
     {
-        cout << "Witaj ponownie " << Towary->UserName << " w czym mogę pomóc ?" << endl;
+        cout << "Witaj ponownie " << Ludzie->UserName << " w czym mogę pomóc ?" << endl;
     }
 
-    Towary->NewSession = false;
+    Ludzie->NewSession = false;
 
     for (;;)
     {
-        cout << "1. Dodaj produkt" << endl;
-        cout << "2. Usun produkt" << endl;
-        cout << "3. Wyswietl produkty" << endl;
+        cout << "1. Dodaj osobę" << endl;
+        cout << "2. Usun osobę" << endl;
+        cout << "3. Wyswietl osoby" << endl;
+        cout << "4. Wyszukaj po nazwisku" << endl;
+
+
         cin >> SelectedIndex;
 
-        if (SelectedIndex == "1" || SelectedIndex == "2" || SelectedIndex == "3")
+        if (SelectedIndex == "1" || SelectedIndex == "2" || SelectedIndex == "3" || SelectedIndex == "4")
         {
             break;
         }
@@ -473,23 +543,29 @@ void Program::InMenu()
             cout << "Podaj poprawny zakres między 1 a 3" << endl;
         }
     }
-    
+
     if (SelectedIndex == "1")
     {
-        //Dodaj produkt
+        //Dodaj osobe
         system("cls");
-        Towary->DodajProdukt();
+        Ludzie->DodajOsobe();
     }
     else if (SelectedIndex == "2")
     {
-        //Usun produkt
+        //Usun osobe
         system("cls");
-        Towary->UsunProdukt();
+        Ludzie->UsunOsobe();
     }
     else if (SelectedIndex == "3")
     {
-        //Wyswietl produkt
+        //Wyswietl osoby
         system("cls");
-        Towary->WyswietlProdukty(true);
+        Ludzie->WyswietlOsoby(true);
+    }
+    else if (SelectedIndex == "4")
+    {
+        //Szukaj osoby
+        system("cls");
+        Ludzie->SearchForPerson();
     }
 }
