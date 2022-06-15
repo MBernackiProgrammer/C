@@ -1,5 +1,5 @@
 // ZapisujęTowary.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
+//JD
 
 #include <iostream>
 #include <fstream>
