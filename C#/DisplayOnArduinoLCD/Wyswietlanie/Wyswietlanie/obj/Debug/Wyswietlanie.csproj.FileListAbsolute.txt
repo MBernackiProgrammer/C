@@ -1,0 +1,10 @@
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.csproj.AssemblyReference.cache
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.Form1.resources
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.Properties.Resources.resources
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.csproj.GenerateResource.cache
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.csproj.CoreCompileInputs.cache
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\bin\Debug\Wyswietlanie.exe.config
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\bin\Debug\Wyswietlanie.exe
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\bin\Debug\Wyswietlanie.pdb
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.exe
+C:\Users\Mateusz Bernacki\source\repos\Wyswietlanie\Wyswietlanie\obj\Debug\Wyswietlanie.pdb
